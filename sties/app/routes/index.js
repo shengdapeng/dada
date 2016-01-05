@@ -5,8 +5,17 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
-router.get('/hello', function(req, res, next) {
-  res.render('hello', { title: 'Express' });
+router.get('/login', function(req, res, next) {
+  res.render('login', { title: 'Express' });
+});
+router.get('/home', function(req, res, next) {
+  res.render('home', { title: 'Express' });
+});
+router.get('/contact', function(req, res, next) {
+  res.render('contact', { title: 'Express' });
+});
+router.get('/about', function(req, res, next) {
+  res.render('about', { title: 'Express' });
 });
 
 
